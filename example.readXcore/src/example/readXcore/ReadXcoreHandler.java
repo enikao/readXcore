@@ -11,6 +11,7 @@ import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -31,6 +32,9 @@ public class ReadXcoreHandler extends AbstractHandler {
 			final Iterator<Object> elements = structuredSelection.iterator();
 
 			final ResourceSet resourceSet = new ResourceSetImpl();
+			
+			// This line resolves the issue
+			resourceSet.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap(true));
 
 			while (elements.hasNext()) {
 				final Object element = elements.next();
