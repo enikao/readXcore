@@ -1,0 +1,9 @@
+target "readXcore Photon"
+
+with source requirements
+
+location "http://download.eclipse.org/releases/photon" {
+	org.eclipse.platform
+	org.eclipse.ui.ide.application
+	org.eclipse.emf.ecore.xcore.ui
+}

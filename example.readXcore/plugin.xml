@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.commands">
+		<command 
+			id="example.readXcore.commandId"
+			name="read Xcore"
+		/>
+   </extension>
+   <extension point="org.eclipse.ui.menus">
+		<menuContribution
+        	locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu?after=additions">
+        	<command 
+        		commandId="example.readXcore.commandId"
+        	/>
+		</menuContribution>
+   </extension>
+   <extension point="org.eclipse.ui.handlers">
+      <handler
+            commandId="example.readXcore.commandId"
+            class="example.readXcore.ReadXcoreHandler"
+      />
+   </extension>
+</plugin>

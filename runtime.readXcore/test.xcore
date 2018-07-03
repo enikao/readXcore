@@ -1,0 +1,11 @@
+package test.readxcore
+
+abstract class ANamedElement {
+	String[1] name
+}
+
+class TestClass {
+	String str
+	int iii
+	boolean booo
+}

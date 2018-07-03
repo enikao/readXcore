@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde?>
+<!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
+<target name="readXcore Photon" sequenceNumber="1530614000">
+  <locations>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.platform" version="4.8.0.v20180611-0500"/>
+      <unit id="org.eclipse.ui.ide.application" version="1.2.100.v20180416-2050"/>
+      <unit id="org.eclipse.emf.ecore.xcore.ui" version="1.6.0.v20180209-0536"/>
+      <repository location="http://download.eclipse.org/releases/photon"/>
+    </location>
+  </locations>
+</target>

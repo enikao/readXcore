@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ReadXcore
+Bundle-SymbolicName: example.readXcore;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: example.readXcore
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.ui.workbench,
+ org.eclipse.emf.ecore,
+ org.eclipse.core.resources,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore.xcore.ui
